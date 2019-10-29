@@ -1,0 +1,1592 @@
+/*---------------------------*/
+/* global css */
+/*---------------------------*/
+   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    background-image:linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.85)), url(img/railroad_fJZ9W89d.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+.content {
+    max-width: 1100px;
+    margin: -5px auto 0 auto;
+    background: rgba(255, 255, 255, 0.54);
+}
+
+.row {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.lastRow {
+    padding-bottom: 30px;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.podvucenNaslov:after {
+    display: block;
+    height: 7px;
+    background-color: #d18643;
+    content: " ";
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.linija-razdelnik {
+    padding: 30px 0 30px 0;
+}
+
+/* -------- BUTTONI -------- */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #cf6d17;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+.novosti .btn {
+    /*margin-top: 45px;*/
+    padding: 8px 28px 8px 28px;
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+}
+
+.live .btn {
+    /*margin-top: 40px;*/
+    padding: 12px 32px 12px 32px;
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+}
+
+/* ----- linkovi ----- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    /*border-bottom: 1px solid #e67e22;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;*/
+}
+
+a:hover,
+a:active {
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+}
+
+/*---------------------------*/
+/* Lajna Home*/
+/*---------------------------*/
+
+
+.lineHome {
+    height: 60px;
+}
+
+.lineHome ul {
+   float: right;
+}
+
+.lineHome ul li {
+    display: inline-block;
+    padding: 12px 55px;
+}
+
+.lineHome a {
+    color: white;
+}
+
+.lineHome i {
+    font-size: 1.6em;
+}
+
+.lineHome .ion-email {
+    font-size: 1.9em;
+    margin-top: 15px;
+}
+
+
+/*---------------------------*/
+/* header */
+/*---------------------------*/
+
+.header-pozadina {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+/*-------- footer --------*/
+footer {
+	background-color: #702829;
+	text-align: center;
+	color: white;
+    padding: 10px;
+}
+
+
+footer a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 200%;
+}
+
+footer a:hover {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+footer p {
+    font-size: 70%;
+}
+
+footer img {
+    width: 20%;
+}
+
+.naVrh {
+    text-align: right;
+}
+
+ul, li {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-youtube:hover {
+    color: #bb0000;
+}
+
+.ion-email:hover {
+    opacity: 0.8;
+}
+
+/*---------------------------*/
+/* Logo */
+/*---------------------------*/
+
+.logo {
+    margin-top: -55px;
+    margin-left: 7px;
+    padding-bottom: 15px;
+    width: 25%;
+    height: auto;
+    float: left;
+}
+
+.logo-black {
+    display: none;
+    margin-top: -5px;
+    margin-bottom: -25px;
+    width: 15%;
+    height: auto;
+    float: left;
+}
+/*---------------------------*/
+/* Navigacija */
+/*---------------------------*/
+.active {
+    border-bottom: 3px solid white;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+nav {
+    background: #702829;
+}
+
+.main-nav {
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: right;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 130%;
+    color: /*#e67e22*/ #e69b59;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 3px solid white;
+    padding-bottom: 11px;
+}
+
+/*---------------------------*/
+/* Navigacija za mobilne telefone */
+/*---------------------------*/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+/*---------------------------*/
+/* Sticky Navigacija */
+/*---------------------------*/
+
+.sticky {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 4px #908d8d;
+}
+
+.sticky .active {
+    border-bottom: 7px solid #cf6d17;
+    padding-bottom: 14px;
+}
+
+.sticky .main-nav {
+    margin-top: 13px;
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active {
+    border-bottom: 7px solid #e67e22;
+    padding-bottom: 15px;
+}
+
+.sticky .logo {
+    display: none;
+}
+.sticky .logo-black {
+    display: block;
+}
+/*---------------------------*/
+/* section news */
+/*---------------------------*/
+
+.novosti {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #333;
+    box-shadow: 2px 2px 4px 2px #555;
+    min-height: 520px;
+    padding:0 40px 0 40px;
+    position: relative;
+}
+ 
+.novosti p  {
+    font-size: 90%;
+	color: black;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.news {
+	padding: 0px 50px;
+}
+
+.news p {
+	padding: 5px;
+}
+
+.live {
+    margin-top: 50px;
+    padding: 0 40px 0 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #333;
+    box-shadow: 2px 2px 4px 2px #555;
+    min-height: 520px;
+    font-size: 90%;
+    position: relative;
+}
+
+.live ul {
+    padding-top: 25px;
+}
+
+.live ul li {
+    line-height: 1.8em;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.live p {
+    text-align: center;
+}
+
+.lista-koncerti {
+	line-height: 150%;
+	padding: 15px;
+}
+
+.lista-koncerti li {
+	list-style: none;
+    color: black;
+}
+
+.novosti .podvucenNaslov,
+.live .podvucenNaslov {
+    text-align: center;
+}
+
+/*---------------------------*/
+/* section band */
+/*---------------------------*/
+
+.band {
+	margin: 0;
+	padding: 80px 50px 10px 50px;
+}
+
+.title {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.band img {
+	padding-bottom: 25px;
+	width: 100%;
+	height: auto;
+}
+
+.shadow {
+	box-shadow: 3px 3px 5px 3px #555;
+	padding-bottom: 25px;
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.shadow :hover {
+	opacity: 0.9;
+}
+
+/*---------------------------*/
+/* album-aktuelni */
+/*---------------------------*/
+.album-aktuelni {
+    padding:0 50px 0 50px;
+}
+
+.dallas {
+    float: right;
+    margin-top: -112px;
+    margin-right: 30px;
+}
+
+div.container {
+  padding: 0 0 20px 15px;
+ 
+}
+
+.noviAlbum {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #333;
+    box-shadow: 2px 2px 4px 2px #555;
+    min-height: 720px;
+}
+
+.noviAlbum h1,
+.noviAlbum h2 {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.recenzije {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #333;
+    box-shadow: 2px 2px 4px 2px #555;
+    min-height: 720px;
+}
+
+.recenzije img {
+    width: 23%;
+    height: 100%;
+    border-radius: 50%;
+}
+.recenzije > div {
+    margin-bottom: 30px;
+}
+
+.recenzije span {
+    font-size: 1.3em;
+}
+
+.recenzije div {
+    /*background: white;*/
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 15px;
+    border: 1px solid gray;
+}
+
+.recenzije h1,
+.recenzije h2,
+.recenzije p {
+    text-align: center;
+}
+
+.recenzije h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.recenzije h2 {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+/*---------------------------*/
+/* SPOT section */
+/*---------------------------*/
+
+#spot {
+    margin: 0;
+    padding: 0 50px 0 50px;
+}
+
+#spot .row {
+    padding-top: 80px;
+}
+
+#spot .span-3-of-8 {
+    min-height: 440px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 3px 3px 5px 3px #555;
+    padding: 20px 30px 30px 30px;
+}
+
+#spot h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/*---------------------------*/
+/* BIOGRAFIJA PAGE */
+/*---------------------------*/
+
+.biografijaPage {
+    margin: 0;
+    text-align: justify;
+}
+
+.biografijaPage .row {
+    padding-left: 100px;
+    padding-right: 100px;
+    background: rgba(255, 255, 255, 0.79);
+}
+ 
+#bio {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/zid.jpg);
+    background-size: cover;
+    background-position:bottom center;
+    height: 60vh;
+    padding-bottom: 0;
+}
+
+#bio  p {
+    text-align: center;
+}
+
+.bioNaslov {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.bioOne p {
+    text-align: justify;
+}
+
+.bioOne img {
+    float: left;
+    margin: 0 25px 10px 0;
+}
+
+.bioTwo p {
+    text-align: justify;
+}
+
+.bioTwo img {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+
+.neboOdSkaja img  {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+/*---------------------------*/
+/* DISKOGRAFIJA PAGE */
+/*---------------------------*/
+
+#diskHeader {
+    background-image:linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.85)), url(img/sinobusi-hero.jpg);
+    background-size: cover;
+    background-position:bottom center;
+    height: 60vh;
+    padding-bottom: 0;
+}
+
+ol {
+    text-align: center;
+}
+
+.album a:link,
+.album a:visited {
+    color:#d18643;  
+    text-decoration: none;
+    padding-bottom: 1px;
+    /*border-bottom: 1px solid #e67e22;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;*/
+}
+
+.album a:hover,
+.album a:active {
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+}
+
+.album {
+    margin: 0;
+}
+
+.album .row {
+    padding-left: 100px;
+    padding-right: 100px;
+    background: rgba(255, 255, 255, 0.79);
+}
+
+.album .razdelnikKaligrafija {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.album .boxShadow {
+    box-shadow: 3px 3px 5px 3px #555;
+}
+
+.album p {
+    text-align: right;
+}
+
+.album h1 {
+    text-align: center;
+}
+
+.album h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.album h3 {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.album ol li a {
+    text-decoration: none;
+}
+
+.albumName {
+    color: black;
+}
+
+.sinobusi-pesma {
+    color: black;
+}
+
+/*---------------------------*/
+/* GALERIJA PAGE */
+/*---------------------------*/
+
+#galerija .row:first-child {
+    padding-top: 90px;
+}
+
+#galerija .row:last-child {
+    padding-bottom :80px;
+}
+
+#galerija .row {
+    padding-left: 100px;
+    padding-right: 100px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#galerija img {
+    border: 2px solid black;
+}
+
+#galerija img:hover {
+    opacity: 0.85;
+    border: 2px solid #cf6d17;
+}
+
+.galerijaNaslov img{
+    margin-top: 30px;
+    border: none !important;
+}
+
+/*---------------------------*/
+/* PODRŠKA PAGE */
+/*---------------------------*/
+
+#podrska .row {
+    padding-left: 100px;
+    padding-right: 100px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#podrska a {
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 5px 15px;
+    color: #333;
+}
+
+#podrska a:hover {
+    text-decoration: underline;
+}
+
+.podrskaImg {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(img/track-870213_1280.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+.podrskaImg h3 a {
+    text-decoration: none;
+}
+
+#podrska h1 {
+    font-style: italic; 
+}
+
+#podrska span {
+    color: #d18643;
+    text-shadow: 0 0 1px black;
+    text-indent: 2em;
+    font-weight: bold;
+}
+
+#podrska li {
+    text-indent: 2em;
+}
+
+.woodens p {
+    margin-top: 30px;
+}
+
+.ukrasPodrska {
+    margin-bottom: 0;
+    padding-bottom: 90px;
+}
+
+.ukrasPodrska p {
+    text-align: center;
+}
+
+/*---------------------------*/
+/* W O O D E N S */
+/*---------------------------*/
+
+#woodensHeader {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/12375187_432954920232527_675991451868023591_o.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 90vh;
+}
+
+#woodensPage {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(img/wood-1093427_1920.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+#woodensHeader img {
+    position: relative;
+    left: 55%;
+    top: 10%;
+    width: 40%;
+    height: auto;
+}
+
+#woodensPage span {
+    color: #e97402;
+    text-shadow: 0 0 1px black;
+    text-indent: 2em;
+}
+
+#woodensPage .row:first-child {
+    padding-top: 40px;
+}
+
+#woodensPage .row:last-child {
+    padding-bottom: 80px;
+}
+
+.repertoar {
+    padding-top: 60px;
+}
+
+.repertoar p {
+    line-height: 2;
+    font-weight: bold;
+}
+
+.woodensKaligrafija + p {
+    text-align: center;
+}
+
+.woodens .live .btn {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.woodensRow {
+    margin-top: 20px;
+}
+
+.sinobusiLink img {
+    width: 50%;
+    margin-top: -10px;
+}
+
+/*---------------------------*/
+/*   NOVOSTI PAGE */
+/*---------------------------*/
+
+
+#novostiPage {
+    background-image:linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.85)), url(img/railroad_fJZ9W89d.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+#novostiPage .row {
+    padding-left: 100px;
+    padding-right: 100px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#novostiPage .row:first-child {
+    padding-top: 80px;
+}
+
+#novostiPage .row:last-child {
+    padding-bottom: 80px;
+}
+
+#novostiPage .razdelnikKaligrafija {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#novostiPage h2 {
+    padding-bottom: 20px;
+}
+
+/*---------------------------*/
+/* TEKSTOVI Page */
+/*---------------------------*/
+
+.tekstoviPage {
+    background-image:linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.85)), url(img/railroad_fJZ9W89d.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+.tekstoviPage .row {
+    padding-left: 250px;
+    background: rgba(255, 255, 255, 0.79);
+}
+
+.tekstoviPage h2 {
+    /*text-indent: 200px;*/
+    padding-top: 70px;
+    padding-bottom: 25px;
+}
+
+
+/*---------------------------*/
+/* M I L A N */
+/*---------------------------*/
+/******************* milan nav *****************/
+
+.logoMilan {
+    border-radius: 50%;
+    margin-top: 13px;
+    margin-left: -65px;
+    width: 5%;
+    height: auto;
+    float: left;
+}
+
+.logoMilan:hover {
+    opacity: 0.9;
+}
+
+#milanNav {
+    background: transparent;
+}
+
+.milan-nav .active {
+    border-bottom: 3px solid /*#e97402*/ firebrick;
+    padding-top: 16px;
+}
+
+.milan-nav {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 27px;
+    margin-left:0;
+    float: left;
+    list-style: none;
+}
+
+.milan-nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.milan-nav li a:link,
+.milan-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 6px 0;
+    font-size: 150%;
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.milan-nav li a:hover,
+.milan-nav li a:active {
+    border-bottom: 3px solid firebrick;
+}
+
+/*---------------------------*/
+/* Navigacija za mobilne telefone */
+/*---------------------------*/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+/*---------------------------*/
+/* Sticky Navigacija */
+/*---------------------------*/
+
+.sticky {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 4px 4px #908d8d;
+}
+
+.sticky .milan-nav {
+    margin-top: 20px;
+}
+
+
+.sticky .milan-nav li a:link,
+.sticky .milan-nav li a:visited {
+    padding: 16px 0;
+    color: #333;
+}
+
+.sticky .logo {
+    display: none;
+}
+.sticky .logo-black {
+    display: block;
+}
+
+#milanNaslovnaFotka {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/Milan_1.jpg);
+    background-size: cover;
+    background-position:top center;
+    height: 120vh;
+}
+
+#milanNaslovnaFotka h1 {
+    margin: 0;
+    color: white;
+    font-size: 900%;
+    padding-top: 60px;
+    margin-left: 80px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#milanKorac p,
+#milanKorac ul,
+#diskografija p,
+#galerijaMilan p {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1em;
+}
+
+
+#milanKorac {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(img/zid.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+#milanKorac .aboutMilan    {
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.aboutMilan + p {
+    margin-top: 40px;
+}
+
+.aboutMilan h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 300%;
+}
+
+#milanKorac ul {
+    text-indent: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#diskografija {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(img/zid.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+#diskografija h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 300%;
+}
+
+.podvucenNaslovMilan:after {
+    display: block;
+    height: 7px;
+    background-color: firebrick;
+    content: " ";
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.titleMilan {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-weight: bold;
+    min-height: 185px;
+    padding: 40px 30px 10px 30px;
+}
+
+#diskografija img {
+    width: 100%;
+}
+
+.milanPozadina {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#galerijaMilan {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(img/zid.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+    padding-top: 40px;
+}
+
+#galerijaMilan img {
+    padding-bottom: 15px;
+}
+
+#galerijaMilan h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 0;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 300%;
+}
+
+.ukrasMilan {
+    text-align: center;
+    margin-top: 70px;
+}
+
+#video {
+     background-image:linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(img/zid.jpg);
+     background-size: cover;
+	 background-attachment: fixed;
+     padding-top: 45px;
+     padding-bottom: 60px;
+}
+
+
+#video h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 0;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 300%;
+}
+
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (min-width: 1450px) {
+    .lineHome ul {
+       float: right;
+       margin-right: 340px;
+    }
+}
+
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    .header .row {
+        padding: 0;
+    }
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    body { 
+        font-size: 1em;
+    }
+    
+    .lineHome {
+        display: none;
+    }
+    
+    .logo {
+        margin-left: 5px;
+        margin-top: 10px;
+        width: 20%;
+    }
+
+    .logo-black {
+        margin-left: 0px;
+        width: 30%;
+    }
+    
+    
+    .main-nav { display: none; }
+    .mobile-nav-icon {
+        display: inline-block;
+        color: #fff;
+        margin-left: 209px;
+        margin-top: 30px;
+        margin-right: 30px;
+    }
+    
+    .sticky .mobile-nav-icon {
+        display: inline-block;
+        color: #fff;
+        margin-left: 209px;
+            margin-top: -22px;
+        margin-right: 30px;
+    }
+    
+    .mobile-nav-icon i {
+        display: inline-block;
+        color: #fff;
+        margin-top: -10px;
+        margin-right: 25px;
+        margin-left: 280px;
+    }
+    
+    .main-nav {
+        float: left;
+        margin-top: 20px;
+        margin-left: 190px;
+        font-size: 1.5em;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 5px;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav {
+        margin-top: 15px;
+        margin-left: 98px;
+        font-size: 1em;
+    }
+
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+    }
+    .sticky .mobile-nav-icon i {
+        color: #555;
+    }
+    
+    .active {
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .sticky .active {
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .shadow {
+        min-height: 240px;
+    }
+    .shadow {
+        box-shadow: 3px 3px 5px 3px #555;
+        padding-bottom: 25px;
+        color: black;
+        background: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        height: auto;
+    }
+    
+    .shadow .title {
+        font-size: 1.6em;
+    }
+    #spot .span-3-of-8 {
+        width: 100%;
+    }
+    
+    #spot .span-5-of-8 {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    
+    .novosti {
+        width: 100%;
+        min-height: 550px;
+        margin: 20px  auto 0 auto;
+    }
+    
+    .live {
+        width: 100%;
+        margin: 20px  auto 0 auto;
+        min-height: 550px;
+    }
+    
+    .header .row {
+        padding: 0;
+    }
+    #podrska {
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    section { padding:  0; }
+    
+    .row,
+    .col { 
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    
+    .lineStranice {
+        display: none;
+    }
+    .lineHome  {
+        display: none;
+    }
+    
+    .logo {
+        margin-left: 5px;
+        margin-top: 10px;
+        width: 30%;
+    }
+
+    .logo-black {
+        margin-left: -15px;
+        width: 30%;
+    }
+    
+    
+    .main-nav { display: none; }
+    
+    .mobile-nav-icon {
+        display: inline-block;
+        color: #fff;
+        margin-top: -56px;
+        
+    }
+   
+    .mobile-nav-icon i {
+        display: inline-block;
+        color: #fff;
+        margin-top: -10px;
+        margin-right: 25px;
+    }
+    
+    .main-nav {
+        float: left;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 5px;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav {
+        margin-left: 30px;
+    }
+
+    .sticky .mobile-nav-icon i {
+        margin-top: -10px;
+        margin-right: 25px;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+    }
+    .sticky .mobile-nav-icon i {
+        color: #555;
+        margin-top: -15px;
+    }
+    
+    .active {
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .sticky .active {
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .news {
+        padding: 10px 2px 2px 2px;
+    }
+    
+    .novosti {
+        padding:0 5px 0 5px;
+    }
+    
+    .live {
+        padding: 0 2px 0 2px;
+    }
+    
+    .biografijaPage .row {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .biografijaPage .fulWidthPhoto {
+        width: 100%;
+    }
+    
+    .album .row {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .album img {
+        width: 100%;
+        height: auto;
+        margin: 15px 0px 20px 0;
+    }
+    
+    .album h3 {
+        margin-top: 15px;
+    }
+    
+    #galerija .row {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .news .span-1-of-2 {
+        margin-bottom: 20px;
+    }
+    
+    .shadow {
+        margin-bottom: 25px;
+    }
+   
+    .band {
+        padding: 0;
+    }
+    
+    .noviAlbum h1,
+    .noviAlbum h2 {
+       font-size: 110%;
+    }
+    
+    .dallas {
+        margin-top: -80px;
+    }
+    
+    .noviAlbum {
+        min-height: 520px;
+    }
+    
+    .album-aktuelni .span-1-of-2 {
+        margin-bottom: 25px;
+    }
+    
+    #spot {
+        padding-top: 10px;
+    }
+    #spot .row {
+        padding-top: 0px;
+    }
+    
+    #spot .span-3-of-8 {
+        margin-bottom: 25px;
+    }
+    
+    #podrska .row {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #podrska img {
+        width: 100%;
+    }
+    
+    #podrska .linija-razdelnik {
+        padding: 40px 0 10px 0;
+    }
+    
+    .ukrasPodrska {
+        display: none;
+    }
+    
+    .ukrasPodrska img {
+        margin-top: 30px;
+    }
+    
+    #novostiPage .row {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    section#spot  {
+       padding: 5px;
+    }
+    #spot .span-5-of-8 {
+        margin-top: 20px;
+    }
+    footer .span-1-of-4 {
+        width: 25%; 
+    }
+    .header .row {
+        padding: 0;
+    }
+    
+}
+
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    
+    .lineHome {
+        display: none;
+    }
+    .logo-black {
+        margin-left: 15px;
+        margin-top: 2px;
+        width: 30%;
+    }
+    .noviAlbum h1,
+    .noviAlbum h2 {
+       font-size: 100%;
+    }
+    
+    .dallas {
+        margin-top: -80px;
+    }
+    
+    .noviAlbum {
+        min-height: 420px;
+    }
+    
+    
+    .tekstoviPage .row {
+        padding-left: 10px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+    #woodensHeader img {
+        position: relative;
+        left: 15%;
+        top: 10%;
+        width: 60%;
+        height: 80%;
+    }
+    footer .span-1-of-4 {
+        width: 25%; 
+    }
+    #spot .span-3-of-8 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    section#spot  {
+       padding: 5px;
+    }
+    #spot .span-5-of-8 {
+        margin-top: 20px;
+    }
+    .header .row {
+        padding: 0;
+    }
+}
+
